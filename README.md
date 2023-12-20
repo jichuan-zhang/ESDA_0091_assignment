@@ -22,7 +22,7 @@ EDA: [opendata-wind-failures-2017](https://www.edp.com/en/innovation/open-data/h
 |--|--|--|
 | Data Cleaning | Jichuan | Jichuan |
 | Literature Review | N/A |  |
-| Random Forest | Jichuan | Jichuan |
+| Benchmark - Random Forest | Jichuan | Jichuan |
 | Model 1 - XG Boost | Jichuan | Jichuan |
 | Model 2 -  |  |  |
 | Model 3 -  |  |  |
