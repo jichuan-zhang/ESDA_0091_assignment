@@ -1,5 +1,6 @@
 ## Data Source
 EDA: [Wind-Turbine-SCADA-signals-2017_0](https://www.edp.com/en/innovation/open-data/turbine-scada-signals-2017) contains the SCADA recorded by its wind turbines
+
 EDA: [opendata-wind-failures-2017](https://www.edp.com/en/innovation/open-data/historical-failure-logbook-2017) contains the event cause the wind turbines to fail
 
 ## Data Cleaning
