@@ -7,6 +7,7 @@ Created on Mon Dec 25 21:00:27 2023
 
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
@@ -56,6 +57,21 @@ r_squared = r2_score(y_test, predictions)
 print(f'Mean Squared Error: {mse}')
 print(f'R-squared: {r_squared}')
 
+
+# %% Feature importances
+importances = best_rf.feature_importances_
+
+# Map to feature names and sort
+feature_names = X.columns
+feature_importances = pd.Series(importances, index=feature_names).sort_values(ascending=False)
+
+# Plot
+plt.figure(figsize=(10,6))
+feature_importances.plot(kind='bar')
+plt.title('Feature Importance in Random Forest Model')
+plt.ylabel('Importance')
+plt.xlabel('Features')
+plt.show()
 # %% Save the Model
 
 dump(best_rf, 'random_forest_model_25122023.joblib')
