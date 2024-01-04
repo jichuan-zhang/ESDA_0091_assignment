@@ -18,7 +18,7 @@ from joblib import dump, load
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Load data
-data = pd.read_csv('cleaned_data.csv')
+data = pd.read_csv('D:/EDA/ESDA_0091_assignment/cleaned_data.csv')
 X = data.drop('Prod_LatestAvg_TotActPwr', axis=1)
 y = data['Prod_LatestAvg_TotActPwr']
 
@@ -34,12 +34,14 @@ X_test_scaled = scaler.transform(X_test)
 # Create an ANN regressor
 ann_regressor = MLPRegressor(max_iter=1000)
 
-# Define the parameter grid for GridSearchCV
 param_grid = {
-'hidden_layer_sizes': [(50,50), (100,)],
-'activation': ['relu', 'tanh', 'logistic'],
-'solver': ['adam', 'sgd'],
-'alpha': [0.0001, 0.001, 0.01],
+    'hidden_layer_sizes': [(50, 50), (100,), (100, 50)],
+    'activation': ['relu', 'tanh'],
+    'solver': ['adam'],
+    'alpha': [0.0001, 0.001],
+    'learning_rate_init': [0.001, 0.01],
+    'beta_1': [0.9, 0.95],  # Adjusted beta_1
+    'beta_2': [0.999, 0.995],  # Adjusted beta_2
 }
 
 # Perform GridSearchCV
