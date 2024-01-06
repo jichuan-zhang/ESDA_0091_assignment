@@ -1,7 +1,7 @@
 ## Data Source
-EDA: [Wind-Turbine-SCADA-signals-2017_0](https://www.edp.com/en/innovation/open-data/turbine-scada-signals-2017) contains the SCADA recorded by its wind turbines
+EDP: [Wind-Turbine-SCADA-signals-2017_0](https://www.edp.com/en/innovation/open-data/turbine-scada-signals-2017) contains the SCADA recorded by its wind turbines
 
-EDA: [opendata-wind-failures-2017](https://www.edp.com/en/innovation/open-data/historical-failure-logbook-2017) contains the event cause the wind turbines to fail
+EDP: [opendata-wind-failures-2017](https://www.edp.com/en/innovation/open-data/historical-failure-logbook-2017) contains the event cause the wind turbines to fail
 
 ## Data Cleaning
 
@@ -15,19 +15,20 @@ EDA: [opendata-wind-failures-2017](https://www.edp.com/en/innovation/open-data/h
  2. Each team member choose one algorithm they prefer to train
 
 ## Performance Evaluation
-- Model Performance will be compared using R-squared and MAPE matrix
+- Model Performance will be compared using MSE matrix
 - Draw some conclusion as what model is better
 ## Workload Distribution
 | Workload | Code | Report |
 |--|--|--|
 | Data Cleaning | Jichuan | Jichuan |
-| Literature Review | N/A |  |
+| Literature Review | N/A | Yifeng |
 | Benchmark - Random Forest | Jichuan | Jichuan |
 | Model 1 - XG Boost | Jichuan | Jichuan |
 | Model 2 -  |  |  |
 | Model 3 -  |  |  |
 | Model 4 -  |  |  |
-| Report - Introduction and Summary | N/A |  |
-| Report - Discussion | N/A |  |
+| Report - Introduction and Summary | N/A | Shiqi |
+| Report - Discussion | N/A | Xuan |
+| Code - Format and Comment | N/A | Jichuan |
 
 > Written with [StackEdit](https://stackedit.io/).
