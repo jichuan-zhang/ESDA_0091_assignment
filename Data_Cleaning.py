@@ -63,7 +63,7 @@ for turbine in scada_data_sorted['Turbine_ID'].unique():
                 else:
                     consecutive_positives = 0  # Reset if a non-positive value is found
     
-            # %% Section 7: Exclude Failure Period
+            # %% Exclude Failure Period
             if start_index >= 0 and end_index < len(turbine_scada_data):
                 start_time = turbine_scada_data.iloc[start_index]['Timestamp']
                 end_time = turbine_scada_data.iloc[end_index]['Timestamp']
